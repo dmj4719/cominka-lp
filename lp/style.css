@@ -477,11 +477,12 @@ a {
 }
 
 .solution__copy strong {
-  font-size: 56px;
+  font-size: 32px;
   font-weight: 900;
   color: var(--yellow);
-  line-height: 1.2;
+  line-height: 1.3;
   white-space: nowrap;
+  display: block;
 }
 
 .solution__compare-speech {
