@@ -261,7 +261,7 @@ a {
 .fv__awards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4px;
+  gap: 0;
   max-width: 100%;
   margin: 0 auto;
 }
