@@ -703,6 +703,14 @@ a {
   text-align: center;
 }
 
+.features__lead {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray-text);
+  letter-spacing: 0.04em;
+  margin-bottom: 32px;
+}
+
 .features__badges {
   display: flex;
   justify-content: center;
