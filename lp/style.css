@@ -154,11 +154,80 @@ a {
   width: auto;
 }
 
-.fv__sub {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--teal);
+/* (A) 吹き出し */
+.fv__balloon {
+  display: inline-block;
+  background: var(--white);
+  border: 2px solid var(--teal);
+  border-radius: 20px;
+  padding: 8px 22px;
   margin-bottom: 16px;
+  position: relative;
+}
+
+.fv__balloon::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid var(--teal);
+}
+
+.fv__balloon::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid var(--white);
+  z-index: 1;
+}
+
+.fv__balloon-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--teal);
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+/* (B) 検索窓 */
+.fv__search-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  border: 2px solid #D0D0D0;
+  border-radius: 100px;
+  padding: 10px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.fv__search-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.fv__search-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--charcoal);
+  letter-spacing: 0.02em;
+}
+
+.fv__search-keyword {
+  color: var(--teal);
+  font-weight: 700;
 }
 
 .fv__title {
@@ -169,68 +238,44 @@ a {
   margin-bottom: 16px;
 }
 
-.fv__title-accent {
-  color: var(--teal);
-}
-
 .fv__title-large {
   font-size: 40px;
   color: var(--orange);
 }
 
-.fv__badge {
-  display: inline-block;
-  background: var(--teal-light);
-  color: var(--teal);
-  font-size: 13px;
-  font-weight: 700;
-  padding: 6px 16px;
-  border-radius: 100px;
-  margin-bottom: 8px;
-}
-
-.fv__price {
-  font-size: 18px;
-  font-weight: 700;
+/* (C) コピー — 自然な文字組み */
+.fv__copy {
+  font-size: 15px;
+  font-weight: 500;
   color: var(--charcoal);
-  margin-bottom: 24px;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  margin-bottom: 2px;
 }
 
-.fv__price-num {
-  font-size: 42px;
-  font-weight: 900;
-  color: var(--orange);
-  line-height: 1;
+.fv__copy:last-of-type {
+  margin-bottom: 20px;
 }
 
+/* (D)(E) 業種タグ — ベタ色白文字、絶対改行させない */
 .fv__tags {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
   margin-bottom: 24px;
 }
 
 .fv__tag {
   display: inline-block;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--teal);
-  background: var(--white);
-  border: 1.5px solid var(--teal);
-  border-radius: 6px;
-  padding: 5px 12px;
-}
-
-.fv__tag--last {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.fv__tag--etc {
-  color: var(--gray-text);
+  font-size: 11px;
   font-weight: 700;
-  font-size: 12px;
+  color: var(--white);
+  background: var(--teal);
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  white-space: nowrap;
 }
 
 .fv__mock {
