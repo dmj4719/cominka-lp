@@ -246,6 +246,7 @@ a {
 
 .fv__awards {
   margin-top: 28px;
+  margin-bottom: 28px;
   text-align: center;
 }
 
@@ -260,8 +261,8 @@ a {
 .fv__awards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  max-width: 320px;
+  gap: 4px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -381,17 +382,26 @@ a {
 }
 
 .solution__copy {
-  font-size: 26px;
-  font-weight: 900;
-  line-height: 1.4;
-  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.85);
   margin-bottom: 12px;
 }
 
 .solution__fraction {
-  font-size: 48px;
+  display: block;
+  font-size: 72px;
   font-weight: 900;
   color: var(--yellow);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.solution__copy strong {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--white);
 }
 
 .solution__compare-speech {
