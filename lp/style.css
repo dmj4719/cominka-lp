@@ -400,14 +400,14 @@ a {
 .pain__bubble-text strong {
   color: var(--teal);
   font-weight: 900;
-  font-size: 17px;
+  font-size: 20px;
   display: block;
 }
 
 .pain__illust {
   width: 65%;
   max-width: 260px;
-  margin: 28px auto 0;
+  margin: 12px auto 0;
   display: block;
 }
 
