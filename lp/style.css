@@ -407,8 +407,10 @@ a {
 .pain__illust {
   width: 65%;
   max-width: 260px;
-  margin: 12px auto 0;
+  margin: -88px auto 0;
   display: block;
+  position: relative;
+  z-index: -1;
 }
 
 /* ===== Section 3: Solution ===== */
