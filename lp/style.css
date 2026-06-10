@@ -654,34 +654,40 @@ a {
   color: var(--yellow);
 }
 
-.bridge__balloon {
-  display: inline-block;
-  background: var(--white);
-  border-radius: 20px;
-  padding: 8px 22px;
-  margin-bottom: 12px;
+.bridge__hero-wrap {
   position: relative;
+  display: inline-block;
+}
+
+.bridge__balloon {
+  position: absolute;
+  top: -18px;
+  right: -16px;
+  background: var(--white);
+  border-radius: 14px;
+  padding: 5px 14px;
+  z-index: 1;
 }
 
 .bridge__balloon::after {
   content: '';
   position: absolute;
-  bottom: -9px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: -7px;
+  left: 16px;
   width: 0;
   height: 0;
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-top: 9px solid var(--white);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid var(--white);
 }
 
 .bridge__balloon-text {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--teal);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .bridge__hero-sub {
