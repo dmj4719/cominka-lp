@@ -257,11 +257,10 @@ a {
   margin-bottom: 20px;
 }
 
-/* (D)(E) 業種タグ — ベタ色白文字、絶対改行させない */
+/* (D)(E) 業種タグ — ベタ色白文字、4×2グリッド、改行させない */
 .fv__tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 6px;
   margin-bottom: 24px;
 }
