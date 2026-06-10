@@ -317,10 +317,9 @@ a {
 
 /* ===== Section 2: Pain ===== */
 .pain {
-  padding: 40px 16px 0;
+  padding: 48px 16px 0;
   background: var(--gray-bg);
   text-align: center;
-  overflow: hidden;
 }
 
 .pain__headline {
