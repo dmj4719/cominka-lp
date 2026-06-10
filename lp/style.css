@@ -593,16 +593,12 @@ a {
   color: var(--teal);
 }
 
-/* ===== Section 3.5: Bridge ===== */
+/* ===== Bridge ===== */
 .bridge {
   padding: 48px 24px 56px;
   background: linear-gradient(160deg, #229EBC 0%, #1A7A94 100%);
   text-align: center;
   position: relative;
-}
-
-.bridge__top-cut {
-  display: none;
 }
 
 .bridge__doubt {
@@ -635,14 +631,14 @@ a {
 
 .bridge__divider-icon {
   font-size: 14px;
-  color: rgba(255,255,255,0.5);
+  color: var(--yellow);
 }
 
 .bridge__sub {
   font-size: 20px;
   font-weight: 900;
   color: rgba(255,255,255,0.9);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .bridge__hero {
@@ -650,18 +646,45 @@ a {
   font-weight: 900;
   color: var(--white);
   line-height: 1.2;
-  margin-bottom: 12px;
-  letter-spacing: -1px;
+  margin-bottom: 8px;
 }
 
-.bridge__hero-quote {
+.bridge__hero-accent {
   color: var(--yellow);
-  font-size: 48px;
-  font-weight: 900;
+}
+
+.bridge__balloon {
+  display: inline-block;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 8px 22px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.bridge__balloon::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid var(--white);
+}
+
+.bridge__balloon-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--teal);
+  letter-spacing: 0.04em;
+  line-height: 1;
 }
 
 .bridge__hero-sub {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 900;
   color: rgba(255,255,255,0.9);
 }
