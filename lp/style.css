@@ -479,8 +479,9 @@ a {
 .solution__copy strong {
   font-size: 56px;
   font-weight: 900;
-  color: var(--orange);
+  color: var(--yellow);
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 .solution__compare-speech {
