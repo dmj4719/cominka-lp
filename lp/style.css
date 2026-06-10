@@ -390,12 +390,10 @@ a {
 }
 
 .solution__fraction {
-  display: block;
   font-size: 72px;
   font-weight: 900;
   color: var(--yellow);
   line-height: 1.1;
-  margin-bottom: 4px;
 }
 
 .solution__copy strong {
