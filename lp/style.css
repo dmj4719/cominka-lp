@@ -663,7 +663,7 @@ a {
   position: relative;
 }
 
-.bridge__balloon::before {
+.bridge__balloon::after {
   content: '';
   position: absolute;
   bottom: -8px;
