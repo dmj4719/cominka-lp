@@ -879,14 +879,16 @@ a {
 }
 
 .results__badges {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 8px;
 }
 
 .results__badge-img {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   height: auto;
 }
 
