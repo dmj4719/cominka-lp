@@ -1112,15 +1112,10 @@ a {
 }
 
 .cta__lead {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.cta__lead-accent {
-  font-size: 32px;
-  font-weight: 900;
-  color: var(--yellow);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  letter-spacing: 0.06em;
 }
 
 .cta__title {
@@ -1155,6 +1150,18 @@ a {
   font-weight: 700;
   color: var(--charcoal);
   margin-bottom: 10px;
+}
+
+.form__required {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--orange);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
 }
 
 .form__options {

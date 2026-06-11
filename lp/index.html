@@ -353,16 +353,15 @@
   <!-- ===== Section 7: CTA + フォーム ===== -->
   <section class="cta" id="cta">
     <div class="cta__header">
-      <p class="cta__lead">たったの<span class="cta__lead-accent">10秒</span></p>
-      <h2 class="cta__title">無料で資料を<br>見てみる</h2>
-      <p class="cta__trial">無料トライアル実施中</p>
+      <p class="cta__lead">＼ AI検索時代を、SEOで勝ち抜く ／</p>
+      <h2 class="cta__title">3分でわかる資料を<br>無料DL</h2>
     </div>
 
     <form class="form" action="#" method="POST">
       <!-- Q1 -->
       <div class="form__group">
-        <label class="form__label">現在の課題は？</label>
-        <select class="form__select" name="q1">
+        <label class="form__label">現在の課題は？<span class="form__required">必須</span></label>
+        <select class="form__select" name="q1" required>
           <option value="" disabled selected>選択してください</option>
           <option value="1">SEO対策の進め方が分からない</option>
           <option value="2">狙うべきキーワードが分からない</option>
@@ -375,8 +374,8 @@
 
       <!-- Q2 -->
       <div class="form__group">
-        <label class="form__label">一番興味を持ったポイントは？</label>
-        <select class="form__select" name="q2">
+        <label class="form__label">一番興味を持ったポイントは？<span class="form__required">必須</span></label>
+        <select class="form__select" name="q2" required>
           <option value="" disabled selected>選択してください</option>
           <option value="1">AIでSEOに特化した記事を作成できること</option>
           <option value="2">勝てるキーワードが見つかること</option>
@@ -389,32 +388,32 @@
 
       <!-- Q3 -->
       <div class="form__group">
-        <label class="form__label">無料トライアルを希望しますか？</label>
+        <label class="form__label">無料トライアルを希望しますか？<span class="form__required">必須</span></label>
         <div class="form__options form__options--inline">
-          <label class="form__option"><input type="radio" name="q3" value="yes"><span>はい</span></label>
+          <label class="form__option"><input type="radio" name="q3" value="yes" required><span>はい</span></label>
           <label class="form__option"><input type="radio" name="q3" value="no"><span>いいえ</span></label>
         </div>
       </div>
 
       <!-- Contact Info -->
       <div class="form__group">
-        <label class="form__label">会社名</label>
-        <input type="text" class="form__input" name="company" placeholder="株式会社〇〇">
+        <label class="form__label">会社名<span class="form__required">必須</span></label>
+        <input type="text" class="form__input" name="company" placeholder="株式会社〇〇" required>
       </div>
       <div class="form__group">
-        <label class="form__label">氏名</label>
-        <input type="text" class="form__input" name="name" placeholder="山田 太郎">
+        <label class="form__label">氏名<span class="form__required">必須</span></label>
+        <input type="text" class="form__input" name="name" placeholder="山田 太郎" required>
       </div>
       <div class="form__group">
-        <label class="form__label">メールアドレス</label>
-        <input type="email" class="form__input" name="email" placeholder="example@company.co.jp">
+        <label class="form__label">メールアドレス<span class="form__required">必須</span></label>
+        <input type="email" class="form__input" name="email" placeholder="example@company.co.jp" required>
       </div>
       <div class="form__group">
-        <label class="form__label">電話番号</label>
-        <input type="tel" class="form__input" name="tel" placeholder="090-1234-5678">
+        <label class="form__label">電話番号<span class="form__required">必須</span></label>
+        <input type="tel" class="form__input" name="tel" placeholder="090-1234-5678" required>
       </div>
 
-      <button type="submit" class="btn btn--primary btn--full">無料で資料を見てみる</button>
+      <button type="submit" class="btn btn--primary btn--full">無料で資料をダウンロード</button>
     </form>
   </section>
 
