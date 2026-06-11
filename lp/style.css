@@ -883,39 +883,16 @@ a {
   color: rgba(255,255,255,0.8);
 }
 
-.results__stats {
-  display: flex;
-  justify-content: center;
+.results__badges {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
+  margin-bottom: 8px;
 }
 
-.results__stat {
-  flex: 1;
-  text-align: center;
-  padding: 16px 8px;
-  background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.results__stat-num {
-  display: block;
-  font-size: 32px;
-  font-weight: 900;
-  color: var(--teal);
-  line-height: 1.1;
-}
-
-.results__stat-unit {
-  font-size: 18px;
-}
-
-.results__stat-label {
-  display: block;
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--gray-text);
-  margin-top: 4px;
+.results__badge-img {
+  width: 100%;
+  height: auto;
 }
 
 .results__cases {
