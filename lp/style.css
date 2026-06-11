@@ -666,14 +666,14 @@ a {
 .bridge__balloon::before {
   content: '';
   position: absolute;
-  top: -8px;
+  bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid var(--white);
+  border-top: 8px solid var(--white);
 }
 
 .bridge__balloon-text {
