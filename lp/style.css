@@ -387,7 +387,7 @@ a {
 
 .logo-marquee__track--reverse {
   animation: marquee-scroll-reverse 28s linear infinite;
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 .logo-marquee__slide {
