@@ -362,6 +362,58 @@ a {
   height: auto;
 }
 
+/* ===== Logo Marquee ===== */
+.logo-marquee {
+  padding: 24px 0;
+  background: var(--white);
+  overflow: hidden;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.logo-marquee__label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gray-light);
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.logo-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.logo-marquee__track--reverse {
+  animation: marquee-scroll-reverse 28s linear infinite;
+  margin-top: 12px;
+}
+
+.logo-marquee__slide {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 0 16px;
+}
+
+.logo-marquee__img {
+  height: 32px;
+  width: auto;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-scroll-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
 /* ===== Section 2: Pain ===== */
 .pain {
   padding: 48px 16px 0;

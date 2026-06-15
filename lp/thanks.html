@@ -7,8 +7,37 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-ND9ZBPRL');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1526223189529092');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1526223189529092&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND9ZBPRL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <section class="thanks">
     <div class="thanks__header">
@@ -23,8 +52,13 @@
       <h2 class="thanks__booking-title">まずはお気軽に<br>話を聞いてみませんか？</h2>
       <p class="thanks__booking-desc">下記カレンダーからご都合の良い日時をお選びください。</p>
       <div class="thanks__calendar">
-        <!-- 日程調整ツール埋め込みエリア -->
-        <p class="thanks__calendar-placeholder">※ 日程調整ツールをここに埋め込み</p>
+        <!-- Begin TimeRex Widget -->
+        <div id="timerex_calendar" data-url="https://timerex.net/s/jo.w_7800/ad3a61e2"></div>
+        <script id="timerex_embed" src="https://asset.timerex.net/js/embed.js"></script>
+        <script type="text/javascript">
+          TimerexCalendar();
+        </script>
+        <!-- End TimeRex Widget -->
       </div>
     </div>
   </section>
