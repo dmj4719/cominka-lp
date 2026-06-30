@@ -1764,16 +1764,6 @@ a {
   position: relative;
   box-shadow: 0 4px 16px rgba(34, 158, 188, 0.12);
 }
-.thanks2-solution__card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--teal), var(--orange));
-  border-radius: 16px 16px 0 0;
-}
 .thanks2-solution__sub {
   font-size: 15px;
   font-weight: 500;
