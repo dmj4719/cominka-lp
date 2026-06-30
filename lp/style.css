@@ -1810,7 +1810,7 @@ a {
 
 /* ===== Thanks2: 予約カレンダー ===== */
 .thanks2-booking {
-  padding: 0 24px 90px;
+  padding: 0 24px 24px;
 }
 .thanks2-booking .thanks__calendar {
   background: var(--white);
