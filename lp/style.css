@@ -1682,7 +1682,7 @@ a {
   margin-top: 2px;
 }
 .thanks2-demo__video {
-  margin: 0 auto 36px;
+  margin: 0 auto 48px;
   max-width: 380px;
   border-radius: 12px;
   overflow: hidden;
@@ -1876,7 +1876,7 @@ a {
 }
 .thanks2-sticky__sub {
   display: block;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 0.06em;
