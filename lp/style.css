@@ -1671,6 +1671,9 @@ a {
   margin-bottom: 12px;
   margin-top: 8px;
 }
+.thanks2-demo__label + .thanks2-demo__video + .thanks2-demo__label {
+  margin-top: 32px;
+}
 .thanks2-demo__label strong {
   font-size: 20px;
   font-weight: 900;
