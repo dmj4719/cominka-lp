@@ -1809,6 +1809,8 @@ a {
 .thanks2-solution__logo-img {
   height: 24px;
   width: auto;
+  position: relative;
+  top: 2px;
 }
 .thanks2-solution__logo-text {
   font-size: 18px;
