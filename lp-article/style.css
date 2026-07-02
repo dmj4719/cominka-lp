@@ -242,7 +242,7 @@ a {
 .fv__balloon-text {
   font-size: 14px;
   font-weight: 700;
-  color: #1b96ff;
+  color: #fff;
   letter-spacing: 0.04em;
   line-height: 1;
 }
@@ -319,7 +319,7 @@ a {
 .fv__title-large {
   font-size: 44px;
   font-weight: 900;
-  color: #1b96ff;
+  color: #fff;
 }
 
 /* (C) コピー — 自然な文字組み */
