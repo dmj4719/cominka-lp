@@ -375,6 +375,15 @@ a {
 }
 
 
+.fv__note {
+  font-size: 9px;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 12px;
+}
+.faq__note {
+  font-size: 11px;
+  color: var(--gray-light);
+}
 .fv__mock-note {
   font-size: 10px;
   color: rgba(255,255,255,0.4);
