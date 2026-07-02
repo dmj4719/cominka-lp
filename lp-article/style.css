@@ -366,13 +366,21 @@ a {
   display: inline-block;
 }
 .fv__mock-video {
-  width: 92%;
+  width: 100%;
+  max-width: 100%;
   display: block;
   margin: 0 auto;
   border-radius: 12px;
   box-shadow: 0 16px 48px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.08);
 }
 
+
+.fv__mock-note {
+  font-size: 10px;
+  color: rgba(255,255,255,0.4);
+  margin-top: 8px;
+  text-align: right;
+}
 
 .fv__awards {
   margin-top: 28px;
