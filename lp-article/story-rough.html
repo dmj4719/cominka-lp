@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ストーリーセクション ラフ - パターン比較</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Kurenaido&family=Yuji+Boku&family=Klee+One:wght@400;600&family=Shippori+Mincho:wght@400;700;800&family=Zen+Old+Mincho:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #111;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .pattern-label {
+      padding: 16px 24px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #1b96ff;
+      letter-spacing: 1px;
+      background: #1a1a1a;
+      border-top: 2px solid #1b96ff;
+    }
+    .pattern-desc {
+      padding: 0 24px 16px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      background: #1a1a1a;
+    }
+
+    /* 共通 */
+    .story {
+      padding: 48px 24px;
+      background: #0a1628;
+    }
+    .story__headline {
+      margin-bottom: 28px;
+    }
+    .story__body {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .story__text {
+      flex: 1;
+    }
+    .story__p1 {
+      font-size: 13px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+    .story__p2 {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.9;
+    }
+    .story__photo {
+      width: 120px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .story__photo-placeholder {
+      width: 120px;
+      height: 160px;
+      border: 2px dashed rgba(255,255,255,0.15);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.25);
+      font-size: 11px;
+    }
+    .story__photo-name {
+      font-size: 11px;
+      color: rgba(255,255,255,0.45);
+    }
+    .divider {
+      height: 24px;
+      background: #111;
+    }
+
+    /* ===== Pattern A: 太ゴシック ===== */
+    .pa .story__headline-main {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.5;
+    }
+    .pa .story__headline-main em {
+      font-style: normal;
+      color: #1b96ff;
+    }
+
+    /* ===== Pattern B: 明朝体 ===== */
+    .pb .story__headline-main {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.6;
+      letter-spacing: 0.04em;
+    }
+    .pb .story__headline-main em {
+      font-style: normal;
+      color: #1b96ff;
+    }
+
+    /* ===== Pattern C: 手書き風 ===== */
+    .pc .story__headline-main {
+      font-family: 'Yuji Boku', serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+    }
+    .pc .story__headline-main em {
+      font-style: normal;
+      color: #1b96ff;
+    }
+
+    /* ===== Pattern D: 特大数字+ゴシック ===== */
+    .pd .story__headline-sub {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 8px;
+    }
+    .pd .story__headline-main {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.5;
+    }
+    .pd .story__headline-main em {
+      font-style: normal;
+      font-size: 40px;
+      color: #1b96ff;
+      display: block;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    /* ===== Pattern E: 下線マーカー + Klee ===== */
+    .pe .story__headline-main {
+      font-family: 'Klee One', cursive;
+      font-size: 24px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.7;
+    }
+    .pe .story__headline-main em {
+      font-style: normal;
+      background: linear-gradient(transparent 65%, rgba(27,150,255,0.3) 65%);
+      padding: 0 2px;
+    }
+
+    /* ===== Pattern F: 古典明朝 + 縦線 ===== */
+    .pf .story__headline {
+      border-left: 3px solid #1b96ff;
+      padding-left: 20px;
+    }
+    .pf .story__headline-main {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.7;
+      letter-spacing: 0.06em;
+    }
+    .pf .story__headline-main em {
+      font-style: normal;
+      color: #1b96ff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pattern A: 太ゴシック -->
+  <div class="pattern-label">A: 太ゴシック（Noto Sans JP 900）</div>
+  <div class="pattern-desc">力強さ・信頼感。SaaS的な王道</div>
+  <section class="story pa">
+    <div class="story__headline">
+      <p class="story__headline-main"><em>費用対効果が合うSEO</em>を<br>より多くの企業に届けたい。</p>
+    </div>
+    <div class="story__body">
+      <div class="story__text">
+        <p class="story__p1">SEOは成果が出るまでに時間もコストもかかる。だから多くの中小企業が手を出せなかった。</p>
+        <p class="story__p2">私たちはSEO会社として何百社を支援する中で、月30万円かけていたノウハウを、月3万円で誰でも使えるツールにまとめました。</p>
+      </div>
+      <div class="story__photo">
+        <div class="story__photo-placeholder">代表写真</div>
+        <span class="story__photo-name">代表取締役</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Pattern B: 明朝体 -->
+  <div class="pattern-label">B: 明朝体（Shippori Mincho 800）</div>
+  <div class="pattern-desc">上品・高級感。想いが伝わりやすい</div>
+  <section class="story pb">
+    <div class="story__headline">
+      <p class="story__headline-main"><em>費用対効果が合うSEO</em>を<br>より多くの企業に届けたい。</p>
+    </div>
+    <div class="story__body">
+      <div class="story__text">
+        <p class="story__p1">SEOは成果が出るまでに時間もコストもかかる。だから多くの中小企業が手を出せなかった。</p>
+        <p class="story__p2">私たちはSEO会社として何百社を支援する中で、月30万円かけていたノウハウを、月3万円で誰でも使えるツールにまとめました。</p>
+      </div>
+      <div class="story__photo">
+        <div class="story__photo-placeholder">代表写真</div>
+        <span class="story__photo-name">代表取締役</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Pattern C: 手書き風 -->
+  <div class="pattern-label">C: 手書き風（Yuji Boku）</div>
+  <div class="pattern-desc">温かみ・人間味。代表の肉声感</div>
+  <section class="story pc">
+    <div class="story__headline">
+      <p class="story__headline-main"><em>費用対効果が合うSEO</em>を<br>より多くの企業に届けたい。</p>
+    </div>
+    <div class="story__body">
+      <div class="story__text">
+        <p class="story__p1">SEOは成果が出るまでに時間もコストもかかる。だから多くの中小企業が手を出せなかった。</p>
+        <p class="story__p2">私たちはSEO会社として何百社を支援する中で、月30万円かけていたノウハウを、月3万円で誰でも使えるツールにまとめました。</p>
+      </div>
+      <div class="story__photo">
+        <div class="story__photo-placeholder">代表写真</div>
+        <span class="story__photo-name">代表取締役</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Pattern D: 特大アクセント -->
+  <div class="pattern-label">D: 特大アクセント（費用対効果を40px）</div>
+  <div class="pattern-desc">数字・キーワードのインパクト重視</div>
+  <section class="story pd">
+    <div class="story__headline">
+      <p class="story__headline-main"><em>費用対効果が合うSEO</em>を、より多くの企業に届けたい。</p>
+    </div>
+    <div class="story__body">
+      <div class="story__text">
+        <p class="story__p1">SEOは成果が出るまでに時間もコストもかかる。だから多くの中小企業が手を出せなかった。</p>
+        <p class="story__p2">私たちはSEO会社として何百社を支援する中で、月30万円かけていたノウハウを、月3万円で誰でも使えるツールにまとめました。</p>
+      </div>
+      <div class="story__photo">
+        <div class="story__photo-placeholder">代表写真</div>
+        <span class="story__photo-name">代表取締役</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Pattern E: マーカー + Klee -->
+  <div class="pattern-label">E: マーカー付き（Klee One）</div>
+  <div class="pattern-desc">手書き感+マーカーで親しみやすさ</div>
+  <section class="story pe">
+    <div class="story__headline">
+      <p class="story__headline-main"><em>費用対効果が合うSEO</em>を<br>より多くの企業に届けたい。</p>
+    </div>
+    <div class="story__body">
+      <div class="story__text">
+        <p class="story__p1">SEOは成果が出るまでに時間もコストもかかる。だから多くの中小企業が手を出せなかった。</p>
+        <p class="story__p2">私たちはSEO会社として何百社を支援する中で、月30万円かけていたノウハウを、月3万円で誰でも使えるツールにまとめました。</p>
+      </div>
+      <div class="story__photo">
+        <div class="story__photo-placeholder">代表写真</div>
+        <span class="story__photo-name">代表取締役</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Pattern F: 古典明朝 + 縦線 -->
+  <div class="pattern-label">F: 左ライン + 古典明朝（Zen Old Mincho）</div>
+  <div class="pattern-desc">引用・メッセージ感。格式高い印象</div>
+  <section class="story pf">
+    <div class="story__headline">
+      <p class="story__headline-main"><em>費用対効果が合うSEO</em>を<br>より多くの企業に届けたい。</p>
+    </div>
+    <div class="story__body">
+      <div class="story__text">
+        <p class="story__p1">SEOは成果が出るまでに時間もコストもかかる。だから多くの中小企業が手を出せなかった。</p>
+        <p class="story__p2">私たちはSEO会社として何百社を支援する中で、月30万円かけていたノウハウを、月3万円で誰でも使えるツールにまとめました。</p>
+      </div>
+      <div class="story__photo">
+        <div class="story__photo-placeholder">代表写真</div>
+        <span class="story__photo-name">代表取締役</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1929,6 +1929,176 @@ a {
   color: var(--charcoal);
 }
 
+/* ===== Thanks Page: Story Section ===== */
+.tp-story {
+  padding: 48px 24px;
+  background: #0a1628;
+}
+.tp-story__headline {
+  border-left: 3px solid #1b96ff;
+  padding-left: 20px;
+  margin-bottom: 28px;
+}
+.tp-story__headline-main {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+}
+.tp-story__headline-main em {
+  font-style: normal;
+  color: #1b96ff;
+}
+.tp-story__body {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.tp-story__text {
+  flex: 1;
+}
+.tp-story__p1 {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.9;
+  margin-bottom: 14px;
+}
+.tp-story__p2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.9;
+}
+.tp-story__photo {
+  width: 120px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.tp-story__photo-placeholder {
+  width: 120px;
+  height: 160px;
+  border: 2px dashed rgba(255,255,255,0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.25);
+  font-size: 11px;
+}
+.tp-story__photo-name {
+  font-size: 11px;
+  color: rgba(255,255,255,0.45);
+}
+
+/* ===== Thanks Page: Value Section ===== */
+.tp-value {
+  padding: 48px 24px;
+  background: #f8fafc;
+  text-align: center;
+}
+.tp-value__title {
+  font-size: 20px;
+  font-weight: 900;
+  color: #0a1628;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+.tp-value__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.tp-value__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a1628;
+  line-height: 1.5;
+}
+.tp-value__icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: #0a1628;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 900;
+}
+.tp-value__note {
+  font-size: 11px;
+  color: #999;
+  margin-top: 8px;
+}
+
+/* ===== Thanks Page: Proof Section ===== */
+.tp-proof {
+  padding: 40px 24px;
+  background: #0a1628;
+  text-align: center;
+}
+.tp-proof__card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 24px 20px;
+  margin-bottom: 16px;
+}
+.tp-proof__label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #1b96ff;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.tp-proof__num {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+}
+.tp-proof__num strong {
+  font-size: 28px;
+  font-weight: 900;
+  color: #fff;
+  background: #0176d3;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+.tp-proof__company {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  margin-top: 6px;
+}
+.tp-proof__rate {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+}
+.tp-proof__rate strong {
+  font-size: 32px;
+  font-weight: 900;
+  color: #1b96ff;
+}
+
 /* ===== Thanks2: 予約カレンダー ===== */
 .thanks2-booking {
   padding: 0 24px 24px;
