@@ -1972,6 +1972,13 @@ a {
   color: rgba(255,255,255,0.85);
   line-height: 1.9;
 }
+.tp-story__p3 {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.8;
+  margin-top: 16px;
+}
 .tp-story__photo {
   width: 120px;
   flex-shrink: 0;
