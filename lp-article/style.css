@@ -1996,16 +1996,16 @@ a {
 }
 .tp-story__photo-name {
   font-size: 11px;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.7);
 }
 .tp-story__photo-fullname {
   font-size: 14px;
   font-weight: 700;
-  color: rgba(255,255,255,0.85);
+  color: #fff;
 }
 .tp-story__photo-en {
   font-size: 10px;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.6);
   letter-spacing: 0.5px;
 }
 
