@@ -1988,16 +1988,11 @@ a {
   align-items: center;
   gap: 6px;
 }
-.tp-story__photo-placeholder {
+.tp-story__photo-img {
   width: 120px;
   height: 160px;
-  border: 2px dashed rgba(255,255,255,0.15);
+  object-fit: cover;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.25);
-  font-size: 11px;
 }
 .tp-story__photo-name {
   font-size: 11px;
