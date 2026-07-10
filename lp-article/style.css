@@ -1932,7 +1932,19 @@ a {
 /* ===== Thanks Page: Story Section ===== */
 .tp-story {
   padding: 48px 24px;
-  background: #0a1628;
+  background: linear-gradient(160deg, #0a1628 0%, #0f2240 50%, #0a1628 100%);
+  position: relative;
+  overflow: hidden;
+}
+.tp-story::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(27,150,255,0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
 .tp-story__headline {
   border-left: 3px solid #1b96ff;
