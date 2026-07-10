@@ -2006,6 +2006,10 @@ a {
   object-fit: cover;
   border-radius: 12px;
 }
+.tp-story__photo-company {
+  font-size: 10px;
+  color: rgba(255,255,255,0.5);
+}
 .tp-story__photo-name {
   font-size: 11px;
   color: rgba(255,255,255,0.7);
