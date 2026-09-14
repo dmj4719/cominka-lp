@@ -133,6 +133,8 @@ section{padding:56px var(--pad)}
 .feature__list mark{background:none;color:var(--teal-dk);font-weight:700;border-bottom:2px solid var(--teal)}
 .features__tags{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:24px}
 .features__tags span{font-size:12px;font-weight:500;padding:6px 12px;border-radius:100px;background:var(--ice);color:var(--ink)}
+.features__tags--grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.features__tags--grid span{text-align:center;border-radius:6px;padding:10px 4px;font-weight:700}
 
 /* ⑥ concerns */
 .concerns{background:var(--mist)}
