@@ -104,6 +104,12 @@ section{padding:56px var(--pad)}
 .diff__hero{margin-bottom:28px}
 .diff__hero-sub{font-size:14px;font-weight:700;color:rgba(255,255,255,.7);margin-bottom:4px}
 .diff__hero-main{font-size:28px;font-weight:900;line-height:1.5;letter-spacing:-.015em;background:linear-gradient(transparent 55%,rgba(228,103,75,.7) 55%);display:inline;padding:0 4px}
+.diff__bridge{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.diff__bridge-row{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:14px 16px}
+.diff__bridge-icon{font-size:10px;color:var(--teal);flex-shrink:0}
+.diff__bridge-text{font-size:15px;font-weight:500;color:rgba(255,255,255,.85)}
+.diff__bridge-text b{font-weight:900;color:#fff;font-size:1.1em}
+.diff__bridge-sum{font-size:13px;font-weight:900;color:#7FD3E6;letter-spacing:.02em;margin-top:4px}
 .diff__table{text-align:left;border:1px solid rgba(255,255,255,.15);border-radius:12px;overflow:hidden;margin-bottom:22px}
 .diff__header,.diff__row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}
 .diff__header{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);font-size:12px;font-weight:700;padding:10px 0}
