@@ -101,17 +101,25 @@ section{padding:56px var(--pad)}
 .diff::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 250px at 10% 100%,rgba(28,157,185,.3),transparent 60%);pointer-events:none}
 .diff>*{position:relative}
 .diff .h2{color:#fff}
-.diff__hero{margin-bottom:28px}
-.diff__hero-sub{font-size:14px;font-weight:700;color:rgba(255,255,255,.7);margin-bottom:4px}
-.diff__hero-main{font-size:28px;font-weight:900;line-height:1.5;letter-spacing:-.015em;background:linear-gradient(transparent 55%,rgba(228,103,75,.7) 55%);display:inline;padding:0 4px}
-.diff__hero-arrow{display:block;width:0;height:0;margin:20px auto 0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid rgba(255,255,255,.4);animation:diff-pulse 1.8s ease-in-out infinite}
+
+/* statement: 1つの塊として読ませる */
+.diff__statement{margin-bottom:0}
+.diff__statement-lead{font-size:15px;font-weight:500;color:rgba(255,255,255,.55);margin-bottom:8px}
+.diff__statement-main{font-size:30px;font-weight:900;line-height:1.35;letter-spacing:-.02em}
+.diff__em{background:linear-gradient(transparent 50%,rgba(228,103,75,.7) 50%);padding:0 4px}
+
+/* arrow */
+.diff__arrow{display:block;width:0;height:0;margin:22px auto;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid rgba(255,255,255,.35);animation:diff-pulse 1.8s ease-in-out infinite}
 @keyframes diff-pulse{0%,100%{opacity:.4;transform:translateY(0)}50%{opacity:1;transform:translateY(4px)}}
-.diff__bridge{margin-bottom:32px}
-.diff__bridge-sub{font-size:14px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:2px}
-.diff__bridge-line{font-size:22px;font-weight:500;color:rgba(255,255,255,.7);line-height:1.4}
-.diff__bridge-line b{font-weight:900;color:#fff}
-.diff__bridge-sum{font-size:24px;font-weight:900;color:#7FD3E6;margin-top:6px;letter-spacing:-.01em}
-.diff__table-title{font-size:20px;font-weight:900;color:#fff;margin-bottom:14px;letter-spacing:-.01em}
+
+/* insight: タグで視覚変化をつける */
+.diff__insight{margin-bottom:32px}
+.diff__insight-tags{display:flex;justify-content:center;gap:8px;margin-bottom:12px}
+.diff__insight-tags span{font-size:13px;font-weight:700;color:#fff;padding:6px 14px;border-radius:100px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06)}
+.diff__insight-text{font-size:20px;font-weight:900;color:#7FD3E6;line-height:1.4;letter-spacing:-.01em}
+
+/* table title */
+.diff__table-title{font-size:22px;font-weight:900;color:#fff;margin-bottom:16px;letter-spacing:-.01em}
 .diff__table{text-align:left;border:1px solid rgba(255,255,255,.15);border-radius:12px;overflow:hidden;margin-bottom:22px}
 .diff__header,.diff__row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}
 .diff__header{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);font-size:12px;font-weight:700;padding:10px 0}
