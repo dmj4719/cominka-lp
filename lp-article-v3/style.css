@@ -20,7 +20,7 @@ section{padding:56px var(--pad)}
 .btn--full{width:100%}.btn--lg{padding:18px;font-size:17px;font-weight:900}
 
 /* header */
-.header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 var(--pad);background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header{position:static;display:flex;align-items:center;height:56px;padding:0 var(--pad);background:#fff;border-bottom:1px solid var(--line)}
 .header__logo{height:20px;width:auto}
 
 /* ① hero */
