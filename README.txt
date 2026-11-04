@@ -34,7 +34,7 @@ Cominka様 Google広告LP（KPIコミット型 SEO/AIO支援）
   2. プライバシーポリシーのURL
      data-todo="プライバシーポリシーURLに差し替え" が付いたリンク（index.html／thanks.html）。
   3. 計測タグ
-     各HTMLの <head> 内コメント位置に GTM／Google広告タグを設置。
+     GTM（GTM-ND9ZBPRL）を両ページの <head> 直後に設置済み。
      コンバージョンは thanks.html の表示で計測する想定です。
   4. noindex
      広告LPのため両ページ noindex にしています。不要なら meta robots を削除してください。
