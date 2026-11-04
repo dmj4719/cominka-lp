@@ -28,9 +28,9 @@ Cominka様 Google広告LP（KPIコミット型 SEO/AIO支援）
   ※ロゴは188×105の枠内に自動で収まります（SPは120×64）。
 
 ■ 実装時に設定が必要な箇所
-  1. フォーム送信先
-     index.html の <form id="contact-form"> の action と、js/main.js 末尾の送信処理。
-     現在はデモとして、入力チェック後に thanks.html へ遷移するだけです（データは送信されません）。
+  1. フォーム送信（EmailJS 連携済み）
+     js/main.js の EMAILJS（サービスID／テンプレートID／パブリックキー）で送信し、成功時に thanks.html へ遷移。
+     送信に失敗した場合はフォーム下にエラーを表示します。テンプレート本文は emailjs_template.txt を参照。
   2. プライバシーポリシーのURL
      data-todo="プライバシーポリシーURLに差し替え" が付いたリンク（index.html／thanks.html）。
   3. 計測タグ

@@ -567,8 +567,8 @@
           <p>導入企業</p>
           <div class="marquee"><div class="marquee__track"></div></div>
         </div>
-        <!-- 送信先：フォームサービス／自社APIのURLを action に設定してください。現在はデモとして thanks.html へ遷移します -->
-        <form class="form" id="contact-form" action="thanks.html" method="get" novalidate>
+        <!-- 送信：EmailJS（js/main.js）。送信成功で thanks.html へ遷移 -->
+        <form class="form" id="contact-form" novalidate>
           <div class="form__grid">
             <div class="ff"><label for="f-company">会社名<span class="req">必須</span></label><input id="f-company" name="company" type="text" placeholder="株式会社◯◯" autocomplete="organization" required><span class="ff__err">会社名を入力してください</span></div>
             <div class="ff"><label for="f-name">お名前<span class="req">必須</span></label><input id="f-name" name="name" type="text" placeholder="山田 太郎" autocomplete="name" required><span class="ff__err">お名前を入力してください</span></div>
@@ -585,6 +585,7 @@
           </fieldset>
           <div class="ff"><label for="f-msg">ご相談内容<span class="opt">（任意）</span></label><textarea id="f-msg" name="message" placeholder="現在の課題や、達成したい目標など"></textarea></div>
           <button class="btn btn--md" type="submit">SEO/AIOのプロに無料相談<span class="btn__arrow"><svg><use href="#i-arrow"/></svg></span></button>
+          <p class="form__error" id="form-error" role="alert" hidden>送信に失敗しました。時間をおいて再度お試しいただくか、通信環境をご確認ください。</p>
           <p class="form__note">送信後、日程調整のご案内をお送りします。<br class="sp-only"><a href="#" data-todo="プライバシーポリシーURLに差し替え" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ送信してください。</p>
         </form>
       </div>
@@ -610,6 +611,7 @@
   <a class="btn" href="#contact" tabindex="-1">SEO/AIOのプロに無料相談<span class="btn__arrow"><svg><use href="#i-arrow"/></svg></span></a>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

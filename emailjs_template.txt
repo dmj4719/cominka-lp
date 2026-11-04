@@ -1,0 +1,41 @@
+EmailJS テンプレート（template_9ziatco）設定内容
+==================================================
+
+■ Subject
+【Cominka｜KPIコミット型】新規無料相談のお申し込み（{{company}} {{name}}様）
+
+■ Content（本文）
+【Cominka｜KPIコミット型 SEO/AIO支援】新規お申し込み
+
+■ 会社名
+{{company}}
+
+■ 氏名
+{{name}}
+
+■ メールアドレス
+{{email}}
+
+■ 電話番号
+{{tel}}
+
+■ 興味のあるプラン
+{{plan}}
+
+■ ご相談内容
+{{message}}
+
+■ 送信元URL
+{{page_url}}
+
+■ 参照元
+{{referrer}}
+
+■ 受付日時
+{{submitted_at}}
+
+--------------------------------------------------
+■ 右側の設定欄
+・To Email ：通知を受け取るアドレス
+・Reply To ：{{email}}   ※通知メールに返信すると、そのままお客様宛てになります
+・From Name：Cominka LP

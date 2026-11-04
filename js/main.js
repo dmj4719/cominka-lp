@@ -109,9 +109,11 @@
     calc();
   }
 
-  /* ---------- contact form ---------- */
+  /* ---------- contact form（EmailJS） ---------- */
+  var EMAILJS = { publicKey: 'gvPYt8gPVa2Y02frn', serviceId: 'service_4o645kr', templateId: 'template_9ziatco' };
   var form = document.getElementById('contact-form');
   if (form) {
+    if (window.emailjs) emailjs.init({ publicKey: EMAILJS.publicKey });
     var check = function (input) {
       var wrap = input.closest('.ff');
       var ok = input.checkValidity() && input.value.trim() !== '';
@@ -123,14 +125,50 @@
       el.addEventListener('blur', function () { if (el.value) check(el); });
       el.addEventListener('input', function () { if (el.closest('.ff').classList.contains('is-error')) check(el); });
     });
+    var btn = form.querySelector('button[type="submit"]');
+    var btnLabel = btn ? btn.firstChild : null; // テキストノード
+    var errBox = document.getElementById('form-error');
+    var sending = false;
+
     form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (sending) return;
       var first = null;
       req.forEach(function (el) { if (!check(el) && !first) first = el; });
-      if (first) { e.preventDefault(); first.focus(); return; }
-      /* 本番：ここでフォームサービス／APIへ送信し、成功時に thanks.html へ遷移させてください。
-         デモでは入力内容をURLに載せないよう、サンクスページへ直接遷移します。 */
-      e.preventDefault();
-      window.location.href = 'thanks.html';
+      if (first) { first.focus(); return; }
+
+      var val = function (n) { var el = form.querySelector('[name="' + n + '"]'); return el ? el.value.trim() : ''; };
+      var plan = form.querySelector('[name="plan"]:checked');
+      var params = {
+        company: val('company'),
+        name: val('name'),
+        email: val('email'),
+        tel: val('tel'),
+        plan: plan ? plan.value : '',
+        message: val('message') || '（記入なし）',
+        page_url: window.location.href, // 送信時のURL（UTM・gclid等のパラメーター付き）
+        referrer: document.referrer || '（なし）',
+        submitted_at: new Date().toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })
+      };
+
+      sending = true;
+      if (btn) { btn.disabled = true; btn.classList.add('is-sending'); if (btnLabel) btnLabel.nodeValue = '送信中...'; }
+      if (errBox) errBox.hidden = true;
+
+      if (!window.emailjs) { onError(new Error('EmailJS SDK not loaded')); return; }
+      emailjs.send(EMAILJS.serviceId, EMAILJS.templateId, params)
+        .then(function () {
+          if (window.dataLayer) window.dataLayer.push({ event: 'form_submit_success', form_plan: params.plan });
+          window.location.href = 'thanks.html';
+        })
+        .catch(onError);
+
+      function onError(err) {
+        sending = false;
+        if (btn) { btn.disabled = false; btn.classList.remove('is-sending'); if (btnLabel) btnLabel.nodeValue = 'SEO/AIOのプロに無料相談'; }
+        if (errBox) errBox.hidden = false;
+        console.error('EmailJS Error:', err);
+      }
     });
   }
 })();
